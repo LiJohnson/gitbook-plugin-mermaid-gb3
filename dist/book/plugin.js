@@ -13,6 +13,6 @@ require([
 		.removeClass('lang-mermaid')
 		.parent()
 		.addClass('mermaid-container')
-		.append('<i class="fa file-text-o" aria-hidden="true"></i>');
+		.append('<i class="fa fa-file-text-o" aria-hidden="true"></i>');
 	});
 });
