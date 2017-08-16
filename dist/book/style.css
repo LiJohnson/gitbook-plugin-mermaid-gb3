@@ -5,14 +5,16 @@
 
 .mermaid-container{
 	position:relative;
+	font-size: 14px;
+	background: #f7f7f7;
 }
-.mermaid-container .fa{
+.mermaid-container .mermaid-tool{
 	position:absolute;
 	left:1px;
 	top:1px;
 	cursor:pointer;
 	opacity:.3;
 }
-.mermaid-container .fa:hover{
+.mermaid-container .mermaid-tool:hover{
 	opacity:.8;
 }
