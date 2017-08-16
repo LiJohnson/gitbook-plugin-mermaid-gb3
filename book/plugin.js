@@ -7,7 +7,7 @@ require([
 		$(this).parent().siblings('svg,pre').toggle();
 	});
 	gitbook.events.bind('page.change', function () {
-		$('.lang-mermaid').each(function(item){
+		$('.lang-mermaid',gitbook.state.$book).each(function(item){
 			var $container = $('<div class=mermaid-container ></div>');
 			var svg = mermaidAPI.render(this.innerText);
 			var href =  URL.createObjectURL(new Blob([ svg ],{type:'image/svg+xml'}))
