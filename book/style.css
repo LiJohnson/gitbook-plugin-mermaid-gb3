@@ -1,0 +1,18 @@
+/**
+ * by https://github.com/LiJohnson
+ * 2017-08-16
+ */
+
+.mermaid-container{
+	position:relative;
+}
+.mermaid-container .fa{
+	position:absolute;
+	left:1px;
+	top:1px;
+	cursor:pointer;
+	opacity:.3;
+}
+.mermaid-container .fa:hover{
+	opacity:.8;
+}
