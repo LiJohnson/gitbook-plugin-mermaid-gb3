@@ -7,6 +7,7 @@
 	position:relative;
 	font-size: 14px;
 	background: #f7f7f7;
+	margin-bottom: 10px;
 }
 .mermaid-container .mermaid-tool{
 	position:absolute;
