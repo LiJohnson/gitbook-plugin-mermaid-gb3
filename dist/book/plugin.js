@@ -8,6 +8,20 @@ require([
 	});
 	var id = 0;
 	gitbook.events.bind('page.change', function () {
+		mermaidAPI.getConfig().gantt.axisFormatter = [
+			["%I:%M", function(t) {
+				return t.getHours()
+			}
+			], ["%a %d", function(t) {
+				return t.getDay() && 1 != t.getDate()
+			}
+			], ["%b %d", function(t) {
+				return 1 != t.getDate()
+			}
+			], ["%m-%y", function(t) {
+				return t.getMonth()
+			}
+			]];
 		$('.lang-mermaid',gitbook.state.$book).each(function(item){
 			var $container = $('<div class=mermaid-container ></div>');
 			var svg = mermaidAPI.render('mermaid-id-'+id++,this.innerText);
